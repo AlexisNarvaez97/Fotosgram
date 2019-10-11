@@ -10,13 +10,15 @@
     </ion-label>
   </ion-item>
 
-  <ion-slides pager="true">
+  <!-- <ion-slides pager="true">
     <ion-slide class="image-slide" [style]="img1 | domSanatizer"> </ion-slide>
     <ion-slide class="image-slide" [style]="img2 | domSanatizer"> </ion-slide>
     <ion-slide class="image-slide" [style]="img3 | domSanatizer"> </ion-slide>
-  </ion-slides>
+  </ion-slides> -->
 
   <!-- Mapa -->
+
+  <app-mapa [coords]="post.coords"></app-mapa>
 
   <ion-item lines="none">
     <ion-icon slot="start" name="heart-empty"></ion-icon>
