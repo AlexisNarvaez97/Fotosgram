@@ -20,6 +20,10 @@
 
   <app-posts [posts]="posts"></app-posts>
 
+  <ion-button (click)="goData()">
+    Click me
+  </ion-button>
+
   <!-- Infinite Scroll -->
   <ion-infinite-scroll [disabled]="!habilitado" threshold="150px" (ionInfinite)="siguientes($event)">
     <ion-infinite-scroll-content

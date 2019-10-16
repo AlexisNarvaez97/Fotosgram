@@ -18,9 +18,7 @@ import { MapaComponent } from './mapa/mapa.component';
   ],
   exports: [
     PostsComponent,
-    PostComponent,
-    AvatarSelectorComponent,
-    MapaComponent
+    AvatarSelectorComponent
   ],
   imports: [
     CommonModule,

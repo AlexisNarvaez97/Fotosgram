@@ -3,7 +3,15 @@
     opacity: 0.3;
 }
 
+img {
+    width: 120px;
+}
+
 .pick-avatar-seleccionado {
     transition: opacity 0.5s linear;
     opacity: 1 !important;
+}
+
+.height-slide {
+    height: 95px !important;
 }

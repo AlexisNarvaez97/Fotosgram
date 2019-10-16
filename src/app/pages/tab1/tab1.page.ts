@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { PostsService } from "../../services/posts.service";
 import { Post } from "../../../interfaces/interfaces";
+import { Router } from '@angular/router';
 
 @Component({
   selector: "app-tab1",
@@ -13,7 +14,7 @@ export class Tab1Page implements OnInit {
 
   habilitado = true;
 
-  constructor(private postsService: PostsService) {}
+  constructor(private postsService: PostsService, private router: Router) {}
 
   ngOnInit() {
     this.siguientes();
@@ -46,5 +47,13 @@ export class Tab1Page implements OnInit {
         }
       }
     });
+  }
+
+  goData() {
+    this.router.navigate(['/main/tabs/tab2'], {queryParams: {
+      name: 'Alexis',
+      apellido: 'Narvaez',
+      Edad: 19
+    }})
   }
 }
